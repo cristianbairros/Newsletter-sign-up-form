@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <main class="main">
+    <div class="main-content">
+      <div class="content-text">
+        <h1>Stay updated!</h1>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <div class="Paragraph-icon">
+          <img src="images/icon-list.svg" alt="icon-list" />
+          <p>Product discovery and building what matters</p>
+        </div>
+        <div class="Paragraph-icon">
+          <img src="images/icon-list.svg" alt="icon-list" />
+          <p>Measuring to ensure updates are a success</p>
+        </div>
+        <div class="Paragraph-icon">
+          <img src="images/icon-list.svg" alt="icon-list" />
+          <p>and much more!</p>
+        </div>
+        <div class="text-validate">
+          <p>Email addres</p>
+          <p id="message-error" class="display-none">valid email required</p>
+        </div>
+        <input type="email" name="email" id="email" class="email" placeholder="email@company.com" />
+        <button class="botao" id="botao">
+          Subscribe to monthly newsletter
+        </button>
+      </div>
+      <div class="image">
+        <picture>
+          <source media="(min-width:769px)" srcset="images/illustration-sign-up-desktop.svg">
+          <img src="images/illustration-sign-up-mobile.svg" alt="image">
+        </picture>
+      </div>
+    </div>
+    <div class="fade display-none" id="fade"></div>
+    <div class="modal display-none" id="modal">
+      <div class="modal-text">
+        <img src="images/icon-success.svg" alt="" />
+        <h1>Thanks for subscribing!</h1>
+        <p>
+          A confirmation email has been sent to
+          <strong><span class="email-valid"></span></strong> Please open it
+          and click the button inside to confirm your subcription.
+        </p>
+      </div>
+      <button id="return-home">Dismiss message</button>
+    </div>
+  </main>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
